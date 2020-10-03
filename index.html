@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Globsl Exicution context and Hoisting</title>
+  </head>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </ul>
+  <body>
+    <script>
+      // hoisting, function declarations is saved  before code starts exicuting
+      // before code runs i have access to variables
+      // sayHi();
+
+      function sayHi() {
+        console.log("hello");
+      }
+
+      sayHi(); // Error, dosent work when assigned to a variable
+      const sayHi = function () {
+        console.log("hey");
+      };
+    </script>
+  </body>
+</html>
